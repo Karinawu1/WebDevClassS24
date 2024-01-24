@@ -1,5 +1,5 @@
 # The Most Basic Spaghetti Ever
-![Alt text](marinara-sauce.jpg)
+(marinara-sauce.jpg)
 
 This recipe is the first food I cooked in my life. My best friend taught me how to make this. A basic spagehetti recipe with store bought Marinara sauce, because I don't know how to cook. 
 
