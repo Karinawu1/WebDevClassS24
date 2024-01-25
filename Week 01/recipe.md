@@ -4,11 +4,11 @@
 This recipe is the first food I cooked in my life. My best friend taught me how to make this. A basic spaghetti recipe with store-bought Marinara sauce, because I don't know how to cook. 
 
 ## Ingredient List 
-- Store Brought Spaghetti (any brand works)
-- Marinara Sauce (Go by Preference, I used Prego for this recipe)
-- A Teaspoon of Oil
-- A Pot of Water
-- A Teaspoon of Salt
+- 70 grams of Store Brought Spaghetti (any brand works)
+- 1 cup of Marinara Sauce (Go by Preference, I used Prego for this recipe)
+- 1 Teaspoon of Oil
+- 1 Pot of Water
+- 1 Teaspoon of Salt
 
 ## Instructions: 
 1. Fill a pot 2/3 of the way with water and let it boil.
