@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>Intro to CSS and Spans</title>
+        <style type="text/CSS">
+        /* Universal selector to zero out default margins or padding */
+            * {
+                margin: 0; 
+                padding: 0
+            }
+
+        /* Tag selector applies to every instance of that tag on the page  */
+            p{
+                /* 1rem = 16px */
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 0.5rem;
+                color: #1836df;
+        /* goes by first to last, like if theres no Georgia on the website it'll go to Times New Roman and so on */
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .sillytext {
+                font-family: fantasy;
+                font-weight: 800;
+                text-decoration: underline;
+            }
+
+            #really_important {
+                font-weight: 600;
+                font-size: x-large;
+                font-style: oblique;
+                line-height: 1.5;
+                text-transform: uppercase;
+            }
+
+            .indented {
+                text-indent: 20%;
+            }
+
+            .align_right {
+                text-align: right;
+            }
+
+            .align_justified {
+                text-align: justify;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="margin: 10px 20px; color:blueviolet">
+            Heading 1 Display Block
+        </h1>
+        <p class="align_right">
+            <span class="sillytext">Lorem ipsum dolor sit amet, </span>consectetur adipiscing elit. Donec tempor convallis iaculis. Proin semper, nibh vitae sodales imperdiet, sem diam rutrum augue, sit amet blandit nisl leo nec arcu. Pellentesque hendrerit, neque id ornare vulputate, nunc turpis vestibulum enim, sit amet sagittis tellus tortor quis lectus. Donec at tempor elit. <span class="sillytext">Integer eu facilisis nunc, ac ultricies dolor. Donec dolor turpis, </span>fringilla et mauris non, commodo scelerisque enim. Vestibulum egestas at velit at mollis. Vestibulum a cursus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum placerat arcu erat, et porta risus lobortis ac.
+        </p>
+        <p id="really_important" class="align_justified">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis iaculis. Proin semper, nibh vitae sodales imperdiet, sem diam rutrum augue, sit amet blandit nisl leo nec arcu. Pellentesque hendrerit, neque id ornare vulputate, nunc turpis vestibulum enim, sit amet sagittis tellus tortor quis lectus. Donec at tempor elit. Integer eu facilisis nunc, ac ultricies dolor. Donec dolor turpis, fringilla et mauris non, commodo scelerisque enim. Vestibulum egestas at velit at mollis. Vestibulum a cursus nibh. Orci varius natoque penatibus et magnis dis parturient montes, <a href='#'>nascetur ridiculus mus. Vestibulum placerat arcu erat, </a>et porta risus lobortis ac.
+        </p>
+        <p class="indented">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor convallis iaculis. Proin semper, nibh vitae sodales imperdiet, sem diam rutrum augue, sit amet blandit nisl leo nec arcu. Pellentesque hendrerit, neque id ornare vulputate, nunc turpis vestibulum enim, sit amet sagittis tellus tortor quis lectus. Donec at tempor elit. Integer eu facilisis nunc, ac ultricies dolor. Donec dolor turpis, fringilla et mauris non, commodo scelerisque enim. Vestibulum egestas at velit at mollis. Vestibulum a cursus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum placerat arcu erat, et porta risus lobortis ac.
+        </p>
+    </body>
+</html>

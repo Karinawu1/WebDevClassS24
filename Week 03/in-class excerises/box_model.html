@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>Simple Navbar</title>
+        <!-- Link to google fonts -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> -->
+        <!-- internal style sheet (only applies to this page/file) -->
+        <style type="text/CSS">
+            /* go on google fonts and put it in your cart, link or import and then scroll down for the fontfamily */
+            @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Handlee', cursive;            
+            }
+
+            /* header {
+                background-color: darkseagreen;
+            }
+
+            nav {
+                background-color: bisque;
+            } */
+
+            ul {
+                /* remove all bullet points */
+                list-style-type: none;
+                overflow: hidden;
+                background-color: cornflowerblue;
+                /* make the parent elements font size zero when using inline block to get rid of the tiny 
+                annoying space between letters (because inline is usually for text) */
+                font-size: 0;
+            }
+
+            li {
+                /* li display BLOCK by default, they don't want to share hoizontal space with any other elements
+                We are making LI display inline-block which gives us the benefits of both block and inline */
+                display: inline-block;
+                font-size: 1rem;
+                /* width: 200px; */
+            }
+
+            /* Descendant selector is looking for this pattern */
+            li a {
+                display: block;
+                text-align: center;
+                /* make it a big clunky clickable area, not just the text itself */
+                width: 100px;
+                padding: 10px;
+                /* remove the default a tag styling, get's rid of the link's underline */
+                text-decoration: none;
+                color: chartreuse;
+            }
+
+            /* list(li) with a anchor tag(a) with class active(href='active') */
+            li a.active {
+                background-color: dodgerblue;
+            }
+
+            li a:hover {
+                background-color: rgba(0,0,0,0.1);
+                color: white;
+                /* white in #, is #fff */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href='active'>Link 1</a></li>
+                    <li><a href='#'>Link 2</a></li>
+                    <li><a href='#'>Link 3</a></li>
+                    <li><a href='#'>Link 4</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
