@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox Layouts</title>
+    <!-- https://fonts.google.com/icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h2>Justify Start, Align Start</h2>
+    <div class="container justify-start align-start">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>Justify End, Align End</h2>
+    <div class="container jusitfy-end align-end">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>Justify Between, Align Center</h2>
+    <div class="container justify-between align-center">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>Justify Around, Align Center</h2>
+    <div class="container justify-around align-center">
+      <div class="item center">1</div>
+      <div class="item center">2</div>
+      <div class="item center">3</div>
+      <div class="item center">4</div>
+    </div>
+
+    <h2>Justify Even, Align Center, Align Self</h2>
+    <div class="container justify-even align-center">
+      <div class="item center self-start">1</div>
+      <div class="item center self-end">2</div>
+      <div class="item center self-center">3</div>
+      <div class="item center self-stretch">4</div>
+    </div>
+
+    <hr />
+
+    <!-- Take a look at a common header footer and sidebar layout -->
+
+    <header> 
+      <h2>Logo and Navgation Here</h2>
+    </header>
+
+    <div class="wrapper">
+    <main class="grid-container">
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+
+      <div class="grid-item">
+        <img src="https://placekitten.com/300/300" alt="image in a responsive grid" />
+      </div>
+    </main>
+
+    <aside class="secondary-nav">
+      <h2>Secondary Nav Sidebar</h2>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">
+            <span class="material-symbols-outlined">cruelty_free</span>Link 1</a></li>
+          <li><a href="#"><span class="material-symbols-outlined">pets</span>Link 2</a></li>
+          <li><a href="#"><span class="material-symbols-outlined">raven</span>Link 3</a></li>
+          <li><a href="#"><span class="material-symbols-outlined">sound_detection_dog_barking</span>Link 4</a></li>
+        </ul>
+      </nav>
+    </aside>
+    </div>
+
+    <footer>
+      <h2>Stuff Like Social Media Links (icons?) or Contact Forms</h2>
+    </footer>
+
+  </body>
+</html>
