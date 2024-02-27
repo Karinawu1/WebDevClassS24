@@ -1,0 +1,72 @@
+/* Global Styles */
+
+
+
+/* Take into account borders and padding into our set dimensions of any 'box' */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Zero out the annoying margin on the page */
+
+html, body {
+    margin: 0;
+}
+
+/* Scale images to fit their parent container */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop First Styling */
+/* Jumbotron Styles */
+
+div.hero {
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10;
+    right: 0;
+    width: 50%;
+    padding: 2%;
+    background: linear-gradient(to right, rgba(255,0,0,0.5) 0%, rgba(255,0,0,0.2) 100%);
+}
+
+button, a.info {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+button:hover, a.info:hover {
+    /* In Class excercise Apply Hover Styles */
+    background-color: aliceblue;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
