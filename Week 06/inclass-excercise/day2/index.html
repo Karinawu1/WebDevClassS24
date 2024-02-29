@@ -3,9 +3,99 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, inital-scale=1"/>
-        <title></title>
+        <title>Modals</title>
+        <style type="text/CSS">
+            a.button {
+                text-decoration: none;
+                color: white;
+                background-color: blueviolet;
+                padding: 1rem 2rem;
+                border-radius: .25rem;
+            }
+
+            /* Modal Styles */
+            .info_modal {
+                /* Stretch the background over the entire screen */
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                /* transparent gray background */
+                background-color: rgba(0,0,0,.3);
+                /* Make sure this modal and contents shows OVER all other content */
+                z-index: 9999;
+                /* Starting state of 0% opacity */
+                opacity: 0;
+                /* always define transtion at the starting state */
+                transition: opacity 400ms ease-in;
+                pointer-events: none;  
+            }
+
+            .info_modal:target {
+                opacity: 1;
+                /* Re-allow pointer events */
+                pointer-events: auto;
+            }
+
+            /* (>) means direct descendant the div right after the class */
+            .info_modal > div {
+                width: 300px;
+                height: 300px;
+                position: relative;
+                margin: 10% auto;
+                padding: 2rem;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .close {
+                height: 20px;
+                width: 20px;
+                background-color: white;
+                color: black;
+                /* position the close button at hte top right corner */
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-align: center;
+                text-decoration: none;
+                transition: all 1s ease;
+                /* in class excercise here */
+                border-top-right-radius: 10px;
+            }
+
+            .close:hover {
+                background-color: black;
+                color: white;
+            }
+        </style>
     </head>
     <body>
-        
+        <br/>
+        <br/>
+        <a href="#info" class="button">Link to Modal 1</a>
+        <a href="#info2" class="button">Link to Modal 2</a>
+
+        <!-- Parent/Wrapper Div recives the ID, and will be our transparent overlay -->
+        <div id="info" class="info_modal">
+            <!-- This child div is the modal box itelf -->
+            <div>
+                <!-- Close button, absolutely positioned -->
+                <a href="#close" class="close">X</a>
+                <!-- You can put whatever HTML headers footers buttons etc in here -->
+                <h2>Title of Modal 1</h2>
+                <p>Look at me! I am the first modal.</p>
+            </div>
+        </div>
+
+        <div id="info2" class="info_modal">
+            <div>
+                <a href="#close" class="close">X</a>
+                <h2>Title of Modal 2</h2>
+                <p>Look at me! I am the second modal.</p>
+            </div>
+        </div>
+
     </body>
 </html>
