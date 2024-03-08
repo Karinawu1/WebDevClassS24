@@ -135,7 +135,6 @@ nav a:hover {
 }
 
 .column2 {
-    float: left;
     width: 100%;
     padding: 10px;
     height: 250px; 
@@ -152,12 +151,6 @@ nav a:hover {
     flex-direction: row;
 }
   
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .left {
     background-color:#550000ff;
     margin-left: 3%;

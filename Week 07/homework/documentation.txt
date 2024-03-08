@@ -1,0 +1,23 @@
+Snippet of Code:
+
+.column2 {
+    width: 100%;
+    padding: 10px;
+    height: 250px; 
+    border-right: 2.5px solid black;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+I learned how to get the scrolling bar on my boxes, and how to only have one showing which is the overflow-y. 
+Because initally without it, I would have 2 scroll bars on the bottom(x) and the side(y). 
+And I figured out that you could just hide the bottom one, by specifying which way you wanted the scroll to be. 
+
+
+Next Steps:
+If I had more time I would add more elements to my website like images and interactive elements (transitions, effects, etc). 
+I would also change up the mobile and lablet's navigation menu, so it doesn't look that out of place. 
+Maybe add some logos and emojis around, so my website doesn't look so plain and flat. 
