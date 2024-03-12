@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>JS Math Methods</title>
+        <script type="text/javascript">
+            // let myVar;
+            // const myText = 'This is text that never changes'
+            // var mySmth
+
+            // Integers : whole numbers
+            var x = 15; var y = 35; var z;
+            z = 10.5 // float
+
+            // addition +
+            console.log(x+y)
+            // subtraction -
+            console.log(y-x)
+            // multiply *
+            console.log(x*y)
+            // division / 
+            console.log(x/y)
+
+            // modular operator % returns the division remainder 
+            // this is really helpful when we want to use odd/even or every nth number 
+            console.log(10%3)
+
+            // just like in algebra, order of operation matters
+            console.log((x+y)*y-1)
+
+            // increments
+            // x++
+
+            // decrement 
+            // x--
+
+            // increment/decremeent by a certain number 
+            // x+=2, x-=2
+
+            // floating point numbers and some basic Math functions
+            var k = 2.25
+            // Math.floor which will round DOWN to the nearest integer
+            var kDown = Math.floor(k)
+            console.log(kDown)
+            // Math.ceil will round UP to the nearest Int 
+            var kUP = Math.ceil(k)
+            console.log(kUP)
+            // Math.round will round Up or Down based on the decimal
+            var num1 = 2.2
+            console.log(Math.round(num1))
+            
+            var num2 = 2.7
+            console.log(Math.round(num2))
+
+            // Math.random() returns a floating point number between 0 and 1 
+            console.log(Math.random())
+
+            // We can use Math.random() and Math.round() to get the whole number 0 and 1
+            // for a true/false boolean situation 
+            var yn = Math.round(Math.random()) // returns either 0 or 1 
+            if (yn === 0) {
+                console.log('False')
+            }
+            else {
+                console.log('True')
+            }
+
+            //Random Number between 0 and n
+            // We are going to need a function tha ttakes a parameter that we can change each time we call this function 
+            function randNum(n) {
+                // when we declare a variable inside a function, that variable is not accessible aka it dies outside of this function
+                var rn  = Math.round(n * Math.random())
+                console.log(rn)
+            }
+            // this is super useful when you want to grab a random item from an array 
+            randNum(15)
+
+            // test is global, but we will assign it a value with our range function
+            // var test
+            function randNumRange(min, max) {
+                var rn  = Math.round(Math.random() * (max-min) + min)
+                // test = rn 
+                // return a value from our function 
+                return rn 
+            }
+
+            var rand1 = randNumRange(20, 30)
+            var rand2 = randNumRange(45, 77)
+            // randNumRange(20, 30)
+            // console.log(test)
+            console.log("On the fly, no var: " + randNumRange(33,44))
+            console.log(rand1, rand2)
+
+
+
+
+        </script>
+    </head>
+    <body></body>
+</html>

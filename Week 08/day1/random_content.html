@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>Intro to Arrays</title>
+        <script type="text/javascript">
+            // make an array of image srcs to choose from at random when the page loads 
+            var arrImg = [
+                '(img1 address)', // im too lazy to do it 
+                '(img2)',
+                '(img3)'
+            ]
+
+            // random links to correspond to each image (urls)
+            var arrLinks = [
+                '(website link1)',
+                '(website link2)',
+                '(website link3)'
+            ]
+
+            // helper function for [picking random umber in our array]
+            function randomIndex(max) {
+                return Math.floor(Math.random() * max)
+            }
+
+            // write our own random image function outside of our event listeners
+            // we should only call it after the DOM has fully loaded
+            function loadRandomImg() {
+                var index = randomIndex(arrImg.length)
+                var img = document.getElementsById("animal")
+                var link = document.getElementById("dynLink")
+                // assign the src of the image to a string in a random index slot in our image array
+                img.src = arrImg[index]
+                //assign the href from our links array 
+                link.href = arrLinks[index]
+            }
+            // wait for the page to finish rendering all of its dom elements before we call our random image function
+            document.addEventListener("DOMContentLoaded", function() {
+                loadRandomImg()
+                // and we can do lots more here...
+            })
+
+            // for this example we can just call the function as the second argument 
+            document.addEventListener("DOMContentLoaded", loadRandomImg)
+        </script>
+    </head>
+    <body>
+        <a href="#" id="dynLink" target="_blank"><img src="" id="animal" /></a>
+    </body>
+</html>
