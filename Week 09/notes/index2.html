@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>User Input Simple</title>
+        <style>
+            h1 {
+                text-transform: uppercase;
+            }
+
+            /* classes to change the color with js */
+            .red {
+                color: red;
+            }
+
+            .green {
+                color: green;
+            }
+
+            .blue { 
+                color: blue;
+            }
+
+            .purple {
+                color: rgb(200, 0, 255);
+            }
+        </style>
+        <script>
+            // a function that changes the color of the H1 based on what number the user picks
+
+            // first thing we need is an event listener to make sure the dom content is loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                let myBtn = document.getElementById('changeBtn')
+                console.log(myBtn.classList)
+
+                // now that the DOM is loaded we can add our event listeners
+                myBtn.addEventListener('click', function() {
+                    // grab the user input and store it
+                    let userN = document.getElementById('num')
+                    // it looks like a number but its a type string
+                    console.log(typeof userN.value)
+                    // but we dont want a string 
+                    let n = parseInt(userN.value)
+                    console.log(typeof n)
+
+                    // grab our h1 so we can change it in our switch statement
+                    var h = document.getElementById('changeMe')
+                    // rather than having a list of conditionals, lets take a look at switch statements
+                    switch(n){
+                        case 0:
+                            h.className='red'
+                            // you need the break at the end, you can add other codes before this
+                            break
+                        case 1:
+                            h.className='green'
+                            break
+                        case 2: 
+                            h.className='blue'
+                            break
+                        case 3: 
+                            h.className='purple'
+                            break
+                        default: 
+                            // the default case is always needed incase none of the above are true
+                            break 
+                    }
+                })
+            })
+
+            function changeID() {
+                let myBtn = document.getElementById('changeBtn')
+                console.log(myBtn.classList)            
+                let userN = document.getElementById('num')
+                console.log(typeof userN.value)
+                let n = parseInt(userN.value)
+                console.log(typeof n)
+                var h = document.getElementById('changeMe')
+                switch(n){
+                    case 0:
+                        h.className='red'
+                        break
+                    case 1:
+                       h.className='green'
+                        break
+                    case 2: 
+                        h.className='blue'
+                        break
+                    case 3:                             
+                        h.className='purple'
+                        break
+                    default: 
+                        break 
+                 }
+            }
+        </script> 
+    </head>
+    <body>
+        <h1 id="changeMe">Get User Input</h1>
+        <form>
+            <fieldset>
+                <legend>Pick a Number Between 0 and 3</legend>
+                <!-- input that only accepts numbers between 0-3 and increments by 1 (whole number) -->
+                <input type="number" name="num" id="num" min="0" max="3" step="1" value="0" />
+                <button type="button" id="changeBtn" class="btnClass" onclick="changeID()">Click To Change Color Class of the H1</button>
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
