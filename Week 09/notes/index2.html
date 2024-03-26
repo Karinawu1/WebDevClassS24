@@ -93,6 +93,7 @@
                         break 
                  }
             }
+            myBtn.addEventListener('click', changeID)
         </script> 
     </head>
     <body>
@@ -102,7 +103,7 @@
                 <legend>Pick a Number Between 0 and 3</legend>
                 <!-- input that only accepts numbers between 0-3 and increments by 1 (whole number) -->
                 <input type="number" name="num" id="num" min="0" max="3" step="1" value="0" />
-                <button type="button" id="changeBtn" class="btnClass" onclick="changeID()">Click To Change Color Class of the H1</button>
+                <button type="button" id="changeBtn" class="btnClass">Click To Change Color Class of the H1</button>
 
 
             </fieldset>
