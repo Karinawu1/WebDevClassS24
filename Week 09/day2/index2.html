@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>JSON</title>
+        <script type="text/javascript">
+
+            let customer = {
+                firstName: 'Tony', 
+                lastName: 'Pony', 
+                age: 23,
+                pets: ['dog', 'cat', 'iguana'],
+            }
+
+            // access the customers first name property with dot notation
+            console.log(customer.firstName)
+            // how would log the customers last name? 
+            console.log(customer.lastName)
+            // tony second pet
+            console.log(customer.pets[1])
+            // what if e want to log all of tony's pets
+            console.log(customer.pets) // this will give you the whole list []
+            for (var i = 0; i < customer.pets.length; i++) {
+                console.log(customer.pets[i]) // this will go through one by one 
+            }
+
+            console.log(customer)
+            // we can add new properties to an existing object using dot notation
+            customer.age = 45
+            console.log(customer)
+
+            customer.isMarried = false
+            console.log(customer)
+            customer.isMarried = true
+            console.log(customer)
+        </script>
+    </head>
+    <body></body>
+</html>
