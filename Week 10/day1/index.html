@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1"/>
+        <title>JSON Objects</title>
+        <script type="text/javascript">
+            async function logAPIResults() {
+                const response = await fetch(
+                    `https://rickandmortyapi.com/api/character/${randomInteger}`
+                ) 
+
+                
+                const myApiData = await response.json()
+
+
+                const message = `${myApiData.name} is a ${myApiData.species} from ${myApiData.origin.name} and he is ${myApiData.pet}`
+                console.log(message)
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
