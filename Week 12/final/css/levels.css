@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Navbar CSS */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.header h2 a {
+    color: rgb(114, 113, 24);
+    text-decoration: none;
+}
+
+.btn-right {
+    position: relative;
+}
+
+.menu {
+    background-color: black;
+    color: rgb(114, 113, 24);
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 120px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-87%);
+}
+
+.links a {
+    color: rgb(114, 113, 24);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-right:hover 
+.links {
+    display: block;
+}
+
+.links a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.links:hover {
+    display: block;
+}
+
+
+/* Images */
+.container {
+    display: flex;
+}
+
+.image {
+    flex: 1;
+    margin: 2%; 
+}
+
+.image img {
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+    display: block;
+    justify-content: center;
+}
+
+h2, h3,  p, li, ol {
+    text-align: center;
+    color: rgb(114, 113, 24);
+}
+
+p, li, ol{
+    margin: 5px 10%;
+}
+
+ol {
+    list-style-position: inside;    
+}
+
+.end {
+    margin-bottom: 20px;
+}
+
+.rotate {
+    rotate: 90deg;
+}
+
+.image2 img {
+    width: 30%; 
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+    display: block;
+    justify-content: center;
+}
+
+
+/* Media Quere */
+
+@media (max-width: 768px) {
+    .image img {
+            width: 70%;
+        }
+}

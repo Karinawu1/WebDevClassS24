@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Navbar CSS */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.header h2 a {
+    color: rgb(114, 113, 24);
+    text-decoration: none;
+}
+
+.btn-right {
+    position: relative;
+}
+
+.menu {
+    background-color: black;
+    color: rgb(114, 113, 24);
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 120px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-87%);
+}
+
+.links a {
+    color: rgb(114, 113, 24);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-right:hover 
+.links {
+    display: block;
+}
+
+.links a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.links:hover {
+    display: block;
+}
+
+/* Image Buttons CSS */
+
+.container {
+    position: relative;
+    width: 100%;
+    transition-duration: 3s;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+.container p {
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: rgb(114, 113, 24);
+    transform: translateY(-100px); transition-duration: 5s; 
+    z-index: -1;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 1.5%;
+    margin: 0 2%;
+}
+
+.container a {
+    color: rgb(114, 113, 24);
+}
+
+.in-button-right {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 25%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(50%);
+    transform: scaleX(-1);
+}
+
+.in-button-left {
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    width: 25%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(60%);
+}
+
+.in-button-smily {
+    position: absolute;
+    bottom: 48%;
+    right: 42%;
+    width: 3%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(70%);
+
+}
+
+.in-button-skinstealer1 {
+    position: absolute;
+    bottom: 23%;
+    right: 5%;
+    width: 26%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(50%);
+}
+
+.in-button-skinstealer2 {
+    position: absolute;
+    bottom: 23%;
+    left: 15%;
+    width: 19%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(70%);
+}
+
+.in-button-partygoer {
+    position: absolute;
+    bottom: 9%;
+    right: 15%;
+    width: 27%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(60%);
+}
+
+.in-button-rat {
+    position: absolute;
+    bottom: 12%;
+    left: 51%;
+    width: 30%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(70%);
+
+}
+
+
+.in-button-clump {
+    position: absolute;
+    bottom: 35%;
+    left: 40%;
+    width: 12%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(60%);
+
+}
+
+
+.in-button-hotel {
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+    width: 20%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(70%);
+
+}
+
+
+.in-button-moth {
+    position: absolute;
+    bottom: 40%;
+    right: 9%;
+    width: 40%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+    filter: brightness(80%);
+    rotate: 30deg;
+
+}
+
+.in-button-flytrap {
+    position: absolute;
+    bottom: 8%;
+    left: 33%;
+    width: 23%;
+    background-color: transparent;
+    background-size: 46px 30px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
+}

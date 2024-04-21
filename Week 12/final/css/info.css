@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(../img/levels/level1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.header h2 a {
+    color: rgb(114, 113, 24);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-right {
+    position: relative;
+}
+
+.menu {
+    background-color: black;
+    color: rgb(114, 113, 24);
+    border: none;
+    cursor: pointer;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 120px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-87%);
+}
+
+.links a {
+    color: rgb(114, 113, 24);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-right:hover 
+.links {
+    display: block;
+}
+
+.links a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.links:hover {
+    display: block;
+}
+
+
+/* info css */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.image {
+    flex: 1;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.info {
+    flex: 2;
+}
+
+.info-pic {
+    margin-top: 3%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px 5%;
+}
+
+p, ul, li {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul, p {
+    padding: 0px 5%;
+}
+
+h2, h3 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+    margin-top: 4%;
+}
+
+.title, 
+h3 {
+    padding: 3px 10px;
+}
+
+a {
+    color: white;
+}
+
+/* Media Quere */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .info-pic {
+        padding: 0;
+    }
+}
