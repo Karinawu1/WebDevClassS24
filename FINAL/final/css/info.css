@@ -11,6 +11,26 @@ body {
     background-color: black;
 }
 
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black; 
+    border-radius: 10px;
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(114, 113, 24); 
+    border-radius: 3px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(114, 112, 24, 0.491); 
+  }
+
 /* navbar */
 
 .navbar {
